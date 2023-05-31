@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Booking Table</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      rel="shortcut icon"
+      href="../image/apple-touch-icon-72x72-precomposed.png"
+      type="image/x-icon"
+    />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/58cdf78341.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="home2">
+    <!-- Start in Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../image/Millennium_logo.png" alt="Logo" srcset="" />
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center align-content-center pt-lg-2"
+          id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link "
+                onclick="location.href='./home2.html'"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="location.href='./AboutUs.html'"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link  "
+                onclick="location.href='./Menu.html'"
+                id="navbarDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="location.href='./Ourteam.html'"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                Our team
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="location.href='./contact.html'"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                Contact
+              </a>
+            </li>
+            <li class="nav-item mt-2">
+              <span class="username" id="username"> </span>
+              <div class="logout">
+                <a href="../index.html" class="btn btn-danger" id="logout">Logout</a>
+              </div>
+            </li>
+          </ul>
+          <div class="search-box d-flex">
+            <div class="search-icon shoping s-icon">
+            <i id="car_shopping" class="fa-solid fa-cart-shopping"></i>
+            <span class="badge">0</span>
+            <div class="card-order justify-content-center align-items-center">
+              <div class="card-item"></div>
+
+              <a onclick="location.href=''" class="mt-2 btn btn_cardorder"
+                >View Booking</a>
+            </div>
+          </div>
+          </div>
+
+        </div>
+
+        </div>    
+    </nav>
+    <!-- End in Navbar Section -->
+
+    <!-- Start in Our Team Header Section -->
+    <section class="contact_header p-3">
+      <div class="container-fluid justify-content-center p-70">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Booking Table</h2>
+            <p>
+              <span class="s1">
+                <i class="fa-solid fa-house"></i>
+                Home
+              </span>
+              <span class="s3">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+              <span class="s2"> Booking Table </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End in Our Team Header Section -->
+
+    <!-- Start in  Book A Table Section -->
+    <section class="contant con s2 p-70 team book_table">
+      <div class="container-fluid">
+        <div class="content">
+          <span> Make A Reserve </span>
+          <h2 class="pb-5">Book A Table On Time</h2>
+          <form action="">
+            <div class="row">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <input
+                  type="number"
+                  name="Phone"
+                  placeholder="Your Phone"
+                  id="phone"
+                />
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <input
+                  type="number"
+                  name="person"
+                  id="person"
+                  placeholder="Person Id"
+                />
+              </div>
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <input type="time" name="" id="date" />
+              </div>
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <label  for="tablenumber">Choose Table Number : </label>
+                <select name="tablenumber" id="tablenumber">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                </select>         
+              </div>
+            </div>
+            <div
+              class="row pt-5 pb-4 justify-content-center align-content-center"
+            >
+              <div class="col-lg-4">
+                <a class="btn2" id="Booking">Book Table </a>
+                <div class="success mt-5 p-3 "> Booking Succeed</div>
+                <div class="allart mt-5 p-3 "> Please Finish You Booking</div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End in Book A Table Section -->
+
+    <!-- Start in location Section -->
+    <section class="contant con s2 p-70 team">
+      <div class="container-fluid">
+        <div class="content">
+          <span> Visit Us </span>
+          <h2 class="pb-5">Find Us Location</h2>
+          <div class="row flex-column flex-lg-row">
+            <div class="col-lg-6">
+              <div class="card">
+                <img src="../image/1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 p-4">
+              <div class="row pt-2 flex-column flex-md-row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <div class="card p-4">
+                    <i></i>
+                    <h5>Address 1</h5>
+                    <p>Themeforest, Envato HQ 24 Fifth st., Los Angeles.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card p-4">
+                    <i></i>
+                    <h5>Address 2</h5>
+                    <p>Themeforest, Envato HQ 24 Fifth st., Los Angeles.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-4 flex-column flex-md-row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <div class="card p-4">
+                    <i></i>
+                    <h5>Address 3</h5>
+                    <p>Themeforest, Envato HQ 24 Fifth st., Los Angeles.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <div class="card p-4">
+                    <i></i>
+                    <h5>Address 4</h5>
+                    <p>Themeforest, Envato HQ 24 Fifth st., Los Angeles.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End in location Section -->
+
+    <!-- Start in Our Blog Section -->
+    <div class="blog team">
+      <div class="container-fluid">
+        <div class="content">
+          <span> Our Blog </span>
+          <h2>Be First Who Read News</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div class="card">
+                <div class="date">
+                  <span> April 18, 2022 </span>
+                </div>
+                <div class="image">
+                  <img src="../image/1 (1).jpg" alt="" srcset="" />
+                </div>
+                <div class="name_text">
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    <span>Admin</span>
+                  </span>
+                  <a class="hov" href="">
+                    <i class="fa-solid fa-tag"></i>
+                    <span>Food</span>
+                  </a>
+                  <a href="">
+                    <h3>Cooking Dining Experience</h3>
+                  </a>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text.
+                  </p>
+                  <a class="btn" type="submit" onclick="location.href='../pages/AboutUs.html'">
+                    <span class="line line1">-------</span>
+                    <span class="tex">Read More</span>
+                    <span class="line line2">-------</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div class="card">
+                <div class="date">
+                  <span> April 18, 2022 </span>
+                </div>
+                <div class="image">
+                  <img src="../image/2.jpg" alt="" srcset="" />
+                </div>
+                <div class="name_text">
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    <span>Admin</span>
+                  </span>
+                  <a href="">
+                    <i class="fa-solid fa-tag"></i>
+                    <span>Food</span>
+                  </a>
+                  <a class="hov" href="">
+                    <h3>Spaghetti with Rock Shrimp</h3>
+                  </a>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text.
+                  </p>
+                  <a class="btn" type="submit" onclick="location.href='../pages/AboutUs.html'">
+                    <span class="line line1">-------</span>
+                    <span class="text">Read More</span>
+                    <span class="line line2">-------</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 m-auto">
+              <div class="card">
+                <div class="date">
+                  <span> April 18, 2022 </span>
+                </div>
+                <div class="image">
+                  <img src="../image/3.jpg" alt="" srcset="" />
+                </div>
+                <div class="name_text">
+                  <span>
+                    <i class="fa-solid fa-user"></i>
+                    <span>Admin</span>
+                  </span>
+                  <a href="">
+                    <i class="fa-solid fa-tag"></i>
+                    <span>Food</span>
+                  </a>
+                  <a class="hov" href="">
+                    <h3>Life is a Combination of food</h3>
+                  </a>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text.
+                  </p>
+                  <a class="btn" type="submit" onclick="location.href='../pages/AboutUs.html'">
+                    <span class="line line1">-------</span>
+                    <span class="text">Read More</span>
+                    <span class="line line2">-------</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start in Our Blog Section -->
+
+    <!-- Start in foot Section -->
+    <section class="foot p-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="heads pb-4">
+                <img src="../image/Millennium_logo.png" alt="" srcset="" />
+              </div>
+              <div class="card_text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur eget rhoncus consectetur enim.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <div class="card icon justify-content-center" onclick="location.href='https://www.facebook.com'">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card icon justify-content-center" onclick="location.href='https://www.instagram.com'">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card icon justify-content-center" onclick="location.href='https://www.twitter.com'">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card icon justify-content-center" onclick="location.href='https://www.linkedin.com'">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="heads">
+                <h4>Use Full Link</h4>
+              </div>
+              <div class="list">
+                <ul class="our_link">
+                  <li>
+                    <a onclick="location.href='./home2.html'"> Home</a>
+                  </li>
+                  <li>
+                    <a onclick="location.href='../pages/AboutUs.html'">About As</a>
+                  </li>
+                  <li>
+                    <a onclick="location.href='./Menu.html'">Menu</a>
+                  </li>
+                  <li>
+                    <a onclick="location.href='./Ourteam.html'">Our Team</a>
+                  </li>
+                  <li>
+                    <a onclick="location.href='./Contact.html'">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="heads">
+                <h4>Contact Us</h4>
+              </div>
+              <div class="list">
+                <ul class="our_link2">
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+1800-001-658</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>peacefulqode@gmail.com</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="heads">
+                <h4>Opening Hours</h4>
+              </div>
+              <div class="list">
+                <ul class="our_link2">
+                  <li>
+                    <p class="left">Mon - Tue</p>
+                    <p class="right">09.00 am - 10.00 pm</p>
+                  </li>
+                  <hr />
+                  <li>
+                    <p class="left">Wed - Thu</p>
+                    <p class="right">10.00am - 11.00pm</p>
+                  </li>
+                  <hr />
+                  <li>
+                    <p class="left">Sat</p>
+                    <p class="right">07.00am - 08.00pm</p>
+                  </li>
+                  <hr />
+                  <li>
+                    <p class="left">Sun</p>
+                    <p class="right">9:00 am - 8 Pm</p>
+                  </li>
+                  <hr />
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End in foot Section -->
+
+    <!-- Start in Subscribe Section -->
+    <section class="subscribe text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 flex-column flex-lg-row mt-4">
+            <div
+              class="left d-flex w-100 "
+            >
+              <img src="../image/Subscribe.png" alt="" srcset=""/>
+              <h4>Subscribe Our Newsletter</h4>
+            </div>
+            <div class="right d-flex w-75">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Your Email Address"
+                class="h-100 "
+              />
+              <button class="button h-100" type="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End in Subscribe Section -->
+
+    <!-- Start in Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="row text-center pt-3">
+          <div class="col-12">
+            <p>Copyright 2022 Millennium All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End in Footer Section -->
+
+
+  <!--Start In Scroll Top-->
+    <div class="top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+  <!--End In Scroll Top-->
+
+
+
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu2.js"></script>
+    <script src="../js/btable.js"></script>
+    <script src="../js/main (2).js"></script>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shopping Bag</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      rel="shortcut icon"
+      href="../image/apple-touch-icon-72x72-precomposed.png"
+      type="image/x-icon"
+    />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/58cdf78341.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="home2">
+    <!-- Start in Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../image/Millennium_logo.png" alt="Logo" srcset="" />
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center align-content-center pt-lg-2"
+          id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link "
+                onclick="location.href='./home2.html'"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="location.href='./AboutUs.html'"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link "
+                onclick="location.href='./Menu.html'"
+                id="navbarDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="location.href='./Ourteam.html'"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                Our team
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="location.href='./contact.html'"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                Contact
+              </a>
+            </li>
+            <li class="nav-item mt-2">
+              <span class="username" id="username"> </span>
+              <div class="logout">
+                <a href="../index.html" class="btn btn-danger" id="logout">Logout</a>
+              </div>
+            </li>
+          </ul>
+          <div class="search-box d-flex">
+            <div class="search-icon shoping s-icon">
+            <i id="car_shopping" class="fa-solid fa-cart-shopping"></i>
+            <span class="badge">0</span>
+            <div class="card-order justify-content-center align-items-center">
+              <div class="card-item"></div>
+
+              <a onclick="location.href=''" class="mt-2 btn btn_cardorder"
+                >View Booking</a>
+            </div>
+          </div>
+          </div>
+
+          <button class="btn btn-link" onclick="location.href='./BookTable.html'">
+            <span class="line line1">-------</span>
+            <span class="text">Book Table</span>
+            <span class="line line2">-------</span>
+        </button>
+        </div>
+
+        </div>    
+    </nav>
+    <!-- End in Navbar Section -->
+    <!-- Start in Contact Header Section -->
+    <section class="contact_header p-3">
+      <div class="container-fluid justify-content-center p-70">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Shopping Bag</h2>
+            <p>
+              <span class="s1" onclick="location.href='./home2.html'">
+                <i class="fa-solid fa-house"></i>
+                Home
+              </span>
+              <span class="s3">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+              <span class="s2" ondblclick="location.href='./Menu.html'">
+                Shopping Bag</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End in Contact Header Section -->
+
+    <!--=============== MAIN ===============-->
+    <main class="py-5 shopping-main">
+      <div class="container">
+        <div class="main-content py-3">
+          <div class="row">
+            <div class="col-md-7 col-lg-8 mb-4 mb-md-0">
+              <div class="col-content">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>product</th>
+                      <th>name</th>
+                      <th>count</th>
+                      <th>price</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-4 d-flex flex-column">
+              <div class="total d-flex flex-column">
+                <div
+                  class="info d-flex justify-content-between align-items-center"
+                >
+                  <span>total</span>
+                  <span class="total-price">$0</span>
+                </div>
+                <button class="btn checkout">checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--=============== FOOTER ===============-->
+ 
+    <!-- Start in foot Section -->
+    <section class="foot p-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="heads pb-4">
+                <img src="../image/Millennium_logo.png" alt="" srcset="" />
+              </div>
+              <div class="card_text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur eget rhoncus consectetur enim.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <div class="card icon justify-content-center" onclick="location.href='https://www.facebook.com'">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card icon justify-content-center" onclick="location.href='https://www.instagram.com'">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card icon justify-content-center" onclick="location.href='https://www.twitter.com'">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card icon justify-content-center" onclick="location.href='https://www.linkedin.com'">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="heads">
+                <h4>Use Full Link</h4>
+              </div>
+              <div class="list">
+                <ul class="our_link">
+                  <li>
+                    <a onclick="location.href='./home2.html'"> Home</a>
+                  </li>
+                  <li>
+                    <a onclick="location.href='../pages/AboutUs.html'">About As</a>
+                  </li>
+                  <li>
+                    <a onclick="location.href='./Menu.html'">Menu</a>
+                  </li>
+                  <li>
+                    <a onclick="location.href='./Ourteam.html'">Our Team</a>
+                  </li>
+                  <li>
+                    <a onclick="location.href='./Contact.html'">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="heads">
+                <h4>Contact Us</h4>
+              </div>
+              <div class="list">
+                <ul class="our_link2">
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+1800-001-658</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>peacefulqode@gmail.com</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="heads">
+                <h4>Opening Hours</h4>
+              </div>
+              <div class="list">
+                <ul class="our_link2">
+                  <li>
+                    <p class="left">Mon - Tue</p>
+                    <p class="right">09.00 am - 10.00 pm</p>
+                  </li>
+                  <hr />
+                  <li>
+                    <p class="left">Wed - Thu</p>
+                    <p class="right">10.00am - 11.00pm</p>
+                  </li>
+                  <hr />
+                  <li>
+                    <p class="left">Sat</p>
+                    <p class="right">07.00am - 08.00pm</p>
+                  </li>
+                  <hr />
+                  <li>
+                    <p class="left">Sun</p>
+                    <p class="right">9:00 am - 8 Pm</p>
+                  </li>
+                  <hr />
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End in foot Section -->
+
+    <!-- Start in Subscribe Section -->
+    <section class="subscribe text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 flex-column flex-lg-row mt-4">
+            <div
+              class="left d-flex w-100 "
+            >
+              <img src="../image/Subscribe.png" alt="" srcset=""/>
+              <h4>Subscribe Our Newsletter</h4>
+            </div>
+            <div class="right d-flex w-75">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Your Email Address"
+                class="h-100 "
+              />
+              <button class="button h-100" type="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End in Subscribe Section -->
+
+    <!-- Start in Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="row text-center pt-3">
+          <div class="col-12">
+            <p>Copyright 2022 Millennium All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End in Footer Section -->
+
+
+  <!--Start In Scroll Top-->
+    <div class="top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+  <!--End In Scroll Top-->
+
+
+
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu2.js"></script>
+    <script src="../js/main (2).js"></script>
+    <script src="../js/shoppingBag.js"></script>
+  </body>
+</html>

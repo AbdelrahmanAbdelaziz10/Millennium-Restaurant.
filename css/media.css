@@ -1,0 +1,204 @@
+:root{
+    --bright-brown-color: #D8C3A6;
+    --brown-color: #A78049;
+    --black-color: #0A0A0A;
+    --white-color: #ffffff;
+    --dark-color: #141414;
+}
+
+/* =========  iPads, Tablets =========*/
+@media screen and (max-width: 991px) {
+    /* ========= Start navbar =========*/
+    .navbar .navbar-toggler {
+        background: var(--brown-color) !important;
+    }
+    .navbar .navbar-toggler .icon {
+       color: var(--white-color) ;
+       font-size: 1.55rem;
+    }
+    .navbar .search-box {
+        position: absolute ;
+        right: 55px;
+        top: 13px;
+    }
+/*====== End navbar =========*/
+
+    /* ========= Start Main Home =========*/
+    .header{
+        min-height: 75vh;
+        background-position: 100%;    
+    }
+    .header span{
+        font-size: 25px !important;
+        font-weight: 500 !important;
+    }
+
+    .btn2{
+    margin-top: 7%;
+}
+
+    /* ========= Start contant =========*/
+    .contact_header {
+        height: 30vh;
+    }
+    .contact_header h2 {
+        font-size: 50px;
+    }
+    .form {
+        height: 78vh !important;
+    }
+    .form .pad-lef{
+        width: 98%;
+    }
+    /* ========= End contant =========*/
+
+    /* ========= Start team =========*/
+    .team .content h2 {
+        font-size: 30px !important;
+    }
+
+    .home .card .texts h5 {
+        font-size: 20px;
+    }
+    .home .card .texts p{
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    /* ========= End team =========*/
+
+    /* ========= Start footer down =========*/
+    
+    footer .col-12 p {
+        font-size: 14px;
+    }
+    
+    /* ========= End footer down =========*/
+    /* ========= Start Log in footer down =========*/
+
+    /* ========= Start Log in footer down =========*/
+
+.form {
+    height: 35vh;
+}
+.form .row{
+    padding-top: 6%;
+}
+.navbar .shoping  {
+    position: absolute;
+    right: 45px;
+    top: 5px;
+}
+.logout {
+    bottom: 0px;
+    left: 170px !important;
+    border: none;
+    color: #A78049;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+}
+
+/* ========= Mobile devices =========*/
+
+@media screen and (max-width: 480px) {
+    /* ========= Start navbar =========*/
+    .navbar .navbar-brand {
+        width: 32%;
+    }
+    .navbar .search-form {
+        width: 250px;
+    }
+    /* ========= End navbar =========*/
+
+    /* ========= Start home =========*/
+    .header{
+        height: 50vh !important;
+        background-position: center;
+        background-size: cover;
+    }
+    .header span{
+        font-size: 20px !important;
+        font-weight: 400 !important;
+    }
+    .header h1{
+        font-size: 30px !important;
+    }
+    .contant .form .form-text .about {
+        font-weight: 400;
+        font-size: 30px !important;
+        line-height: 50px;
+    }
+    .contact_header {
+        height: 35vh;
+    }
+    .contact_header h2 {
+        font-size: 40px;
+    }
+    .contant .row {
+        flex-direction: column-reverse;
+        margin-bottom: 9px;
+    }
+    .form .pad-lef {
+        width: 94%;
+    }
+    form .col textarea {
+        margin-top: 10px;
+    }
+    
+    /* ========= Start contant =========*/
+    .contant h4.about {
+        font-size: 30px !important ;
+    }
+    /* ========= End contant =========*/
+
+    /* ========= Start rating =========*/
+    .rating h4 {
+        font-size: 18px;
+        }
+    /* ========= End rating =========*/
+
+    /* ========= Start footer up =========*/
+    
+    .foot .heads h4 {
+        font-size: 22px;
+    }
+
+    .foot .list .our_link li  {
+          font-size: 15px;
+    }
+
+    /* ========= End footer up =========*/
+
+    /* ========= Start subscribe =========*/
+
+    .subscribe h4 {
+        font-size: 18px;
+    }
+
+    /* ========= End subscribe =========*/
+
+    .card-order {
+        left: 80px !important;
+        z-index: 11;
+    }
+    /* ========= Start login =========*/
+    .login{
+        margin: 0 !important;
+    }
+
+    .login > .row {
+        margin: 0;
+        padding: 0 !important;
+        height: 100%;
+    }
+    .logout {
+        bottom: 0px;
+        left: 170px !important;
+        color: #A78049;
+    }
+    .card-order {
+        left: 0px !important;
+    }
+
+}
